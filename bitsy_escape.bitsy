@@ -1,8 +1,6 @@
 """
 Bitsy escape
-push bottom arrow button to see more{pg}   click space to exit messages.
-   use arrow keys to move around
-   if u die then click the stop button then restart the game by clicking the start button
+push bottom arrow button to see more{pg}click space to exit messages. use arrow keys to move around if u die then click the stop button then restart the game by clicking the start button
 """
 
 # BITSY VERSION 7.10
@@ -66,23 +64,51 @@ EXT 7,13 2 13,13 FX tunnel DLG c
 PAL 0
 
 ROOM 2
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+0,0,0,0,0,0,a,a,0,0,0,a,a,0,0,a
+0,a,0,0,0,0,0,a,a,0,0,0,a,0,a,0
+0,a,0,a,a,0,0,a,0,0,0,0,a,0,a,a
+0,0,0,0,a,a,a,a,0,0,a,a,a,0,0,0
+0,a,a,a,a,a,0,0,0,0,0,a,a,a,0,0
+0,a,a,0,0,0,0,0,a,a,0,0,0,a,0,0
+0,a,0,0,0,a,a,0,0,0,0,0,0,a,0,a
+0,0,0,0,0,0,0,0,a,0,0,0,0,a,0,a
+a,0,0,a,0,a,0,0,a,a,a,0,0,0,0,0
+a,b,a,a,a,a,0,0,0,0,0,0,a,a,a,0
+a,a,a,0,a,a,0,0,a,0,0,a,0,0,0,0
+a,a,a,0,0,a,a,a,a,0,0,a,a,0,0,0
+0,0,a,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,a,0,0,a,a,a,a,a,a,0,0,0,a,0
+0,0,d,0,0,0,0,0,0,a,0,0,a,a,a,0
 NAME castle 
+ITM 7 14,1
+ITM 8 10,15
+ITM 9 6,3
+ITM a 5,2
+ITM 1 0,13
+EXT 2,15 2 1,15 DLG e
+EXT 1,15 2 2,15
+EXT 1,10 3 13,13 FX tunnel DLG g
+PAL 0
+
+ROOM 3
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME towers
 PAL 0
 
 TIL a
@@ -119,6 +145,17 @@ TIL c
 00111110
 NAME door 2
 
+TIL d
+11101111
+11111101
+11011011
+01110110
+10101011
+11011111
+11101011
+01111110
+WAL false
+
 SPR A
 00000000
 00010000
@@ -150,7 +187,6 @@ SPR c
 01000010
 NAME grinding wheel
 DLG 5
-POS 0 10,14
 
 SPR d
 00011000
@@ -161,9 +197,40 @@ SPR d
 00011000
 00011000
 00000000
-NAME man
+NAME man 2
 DLG a
-POS 1 5,1
+
+SPR e
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+
+SPR f
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+
+SPR g
+00011000
+00011000
+00011000
+00100100
+01011010
+00011000
+00011000
+00000000
+NAME man 1
+DLG d
 
 ITM 1
 00000000
@@ -198,7 +265,7 @@ ITM 3
 00010010
 00100001
 01000000
-NAME  sword monster
+NAME sword monster
 DLG 7
 
 ITM 4
@@ -237,6 +304,53 @@ ITM 6
 NAME gun monster
 DLG b
 
+ITM 7
+00000000
+00010000
+00110000
+01010000
+11111110
+01010000
+00110000
+00010000
+NAME crossbow
+DLG h
+
+ITM 8
+10111010
+10111010
+01111100
+01111100
+01111100
+01111100
+00101000
+00101000
+NAME armour
+DLG i
+
+ITM 9
+00000000
+00111000
+01010100
+00010000
+00010000
+00010000
+00000000
+00000000
+NAME pick axe
+
+ITM a
+00000000
+00011100
+00111110
+00101110
+10111111
+11111111
+11111111
+00000000
+NAME gum cha
+DLG f
+
 DLG 2
 A key! {wvy}What does it open?{wvy}
 NAME key dialog
@@ -249,7 +363,7 @@ DLG 5
 """
 {
   - {item "sword"} == 1 ?
-    your sword is now sharp{sharp = true}
+    your sword {printItem "2"} is now sharp{sharp = true}
   - else ?
     Nothing to do here.
 }
@@ -303,14 +417,14 @@ DLG 9
 NAME bullets dialog
 
 DLG a
-go get the gun and the bullets to defeat the monster
+
 NAME man dialog
 
 DLG b
 """
 {
   - loaded == true ?
-     you defeated the monster well done
+    you defeated the monster well done
   - else ?
     the monster ate you  reload{end}
 }
@@ -327,4 +441,54 @@ DLG c
 }
 """
 NAME locked exit 2
+
+DLG d
+go get the gun and the bullets to defeat the monster
+NAME man 1 dialog
+
+DLG e
+"""
+{
+  - {item "9"} >= 1 ?
+    {property locked false}You break through the wall with your pick axe
+  - else ?
+    {property locked true}The way is blocked...
+}
+"""
+NAME locked exit 3
+
+DLG f
+"""
+{
+  - {item "8"} >= 1 ?
+    The gum cha {shk}attacks{shk} but your armour {printItem "8"} protects you.
+  - else ?
+    The gum cha {shk}attacks{shk} but without armour {printItem "8"} you die.{end}
+}{
+  - {item "7"} >= 1 ?
+    You shoot at the gum cha {printItem "a"} with your crossbow {printItem "7"} and it {wvy}dies{wvy}.
+  - else ?
+    You have nothing to fight the gum cha {printItem "a"} with and it defeats you.
+}
+"""
+NAME gum cha dialog
+
+DLG g
+"""
+{
+  - {item "1"} >= 3 ?
+    {property locked false}The key opens the door!
+  - else ?
+    {property locked true}The door is locked...
+}
+"""
+NAME locked exit 4
+
+DLG h
+you pick up a crossbow
+NAME crossbow dialog
+
+DLG i
+you find some armour
+NAME armour dialog
 
