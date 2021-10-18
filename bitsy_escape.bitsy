@@ -35,7 +35,8 @@ ITM 1 3,8
 ITM 2 15,3
 ITM 3 3,7
 ITM 3 10,14
-EXT 2,13 1 5,5 FX tunnel DLG 6
+EXT 1,13 1 5,5 FX tunnel DLG 6
+EXT 13,13 6 3,13
 PAL 0
 
 ROOM 1
@@ -92,8 +93,147 @@ EXT 1,10 3 13,13 FX tunnel DLG g
 PAL 0
 
 ROOM 3
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+0,0,0,0,0,0,a,a,0,0,0,a,a,0,0,a
+0,a,0,0,0,0,0,a,a,0,0,0,a,0,a,0
+0,a,0,a,a,0,0,a,0,0,0,0,a,0,a,a
+0,0,0,0,a,a,a,a,0,0,a,a,a,0,0,0
+0,a,a,a,a,a,0,0,0,0,0,a,a,a,0,0
+0,a,a,0,0,0,0,0,a,a,0,0,0,a,0,0
+0,a,0,0,0,a,a,0,0,0,0,0,0,a,0,a
+0,0,0,0,0,0,0,0,a,0,0,0,0,a,0,a
+a,0,0,a,0,a,0,0,a,a,a,0,0,0,0,0
+a,b,a,a,a,a,0,0,0,0,0,0,a,a,a,0
+a,a,a,0,a,a,0,0,a,0,0,a,0,0,0,0
+a,a,a,0,0,a,a,a,a,0,0,a,a,0,0,0
+0,0,a,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,a,0,0,a,a,a,a,a,a,0,0,0,a,0
+0,0,d,0,0,0,0,0,0,a,0,0,a,a,a,0
+NAME fort
+ITM d 10,15
+ITM c 2,12
+ITM e 8,6
+ITM e 8,8
+EXT 7,7 4 13,13
+PAL 0
+
+ROOM 4
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,a,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,a,0,0,0,0,0,a,a,0,0,0
+a,a,a,a,0,a,0,0,0,0,a,a,0,0,0,0
+0,0,0,a,0,a,0,0,a,a,a,0,0,a,0,0
+0,0,0,a,0,a,0,a,a,0,0,0,a,a,0,0
+0,0,0,0,0,a,a,0,0,d,0,0,a,0,a,0
+a,a,0,a,0,0,a,c,0,a,0,0,0,0,0,0
+0,0,0,0,0,0,a,a,0,a,a,0,a,0,0,0
+0,0,0,0,0,0,0,0,d,a,a,0,a,0,0,0
+0,a,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,a,0,a,0,0,a,a,a,a,a,a,a,0,0,0
+0,a,0,a,0,0,0,0,0,0,0,0,0,0,0,0
+0,a,a,a,0,0,0,0,a,a,a,a,0,0,0,0
+0,0,0,0,0,0,0,0,a,0,0,a,0,0,0,0
+0,0,0,0,0,0,0,0,a,0,0,d,0,0,0,0
+NAME tower
+PAL 0
+
+ROOM 5
+f,f,f,f,f,f,f,0,f,f,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,d,d,f,f,f,f,0
+0,f,f,f,f,f,0,0,0,f,d,0,0,c,f,0
+0,d,0,0,0,f,0,0,0,f,f,f,f,f,f,0
+0,f,0,0,b,f,0,0,0,0,0,0,0,0,0,0
+0,f,f,f,f,f,0,f,f,f,f,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,f,0,0,f,0,0
+0,0,0,0,0,0,0,0,f,f,f,0,0,0,0,0
+0,f,f,f,f,f,0,0,f,0,0,0,0,0,0,0
+0,f,c,0,0,f,0,0,0,0,f,f,f,f,0,0
+0,f,0,0,0,f,0,0,0,0,0,0,0,f,0,0
+0,f,f,f,f,f,0,f,0,0,f,0,0,0,f,0
+0,0,0,0,0,0,0,0,0,0,f,f,f,f,f,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,f,f,f,0,0,0,f,f,0,0,0
+f,f,f,f,f,f,f,f,0,0,0,f,f,0,0,0
+NAME forest
+ITM f 7,0
+ITM h 4,10
+ITM b 2,3
+ITM 1 4,9
+ITM h 10,15
+EXT 9,1 5 10,2 DLG t
+EXT 10,2 5 9,1
+EXT 13,2 5 2,9
+EXT 2,9 5 13,2
+EXT 1,3 5 2,3 DLG u
+EXT 2,3 5 1,3
+EXT 4,4 0 13,13 DLG v
+PAL 0
+
+ROOM 6
+0,0,f,f,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,f,0,f,0,f,0,0,0,f,f,0,0
+0,f,f,0,0,0,0,f,f,0,0,f,f,0,0,0
+0,f,f,0,0,0,0,0,0,0,0,0,0,0,f,0
+0,0,0,0,0,0,f,f,f,f,d,0,0,0,f,0
+0,f,f,0,0,f,0,0,0,0,d,0,0,f,0,0
+0,f,f,0,0,f,0,0,0,0,f,0,f,0,f,0
+0,0,0,0,0,f,0,0,f,f,d,0,0,0,0,0
+0,0,f,f,0,f,0,0,f,0,d,f,f,f,0,0
+0,0,f,f,0,0,f,f,f,f,f,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,f,0,0,f,0,0
+0,0,0,0,f,0,0,0,0,0,0,0,0,f,f,f
+f,f,f,f,f,0,f,0,f,0,0,0,0,0,0,0
+f,f,0,b,d,0,f,0,f,0,f,f,0,0,0,0
+0,0,0,f,f,0,0,0,f,0,f,f,0,f,f,f
+0,0,0,f,f,0,0,0,0,0,0,0,0,0,0,0
+NAME ocean
+ITM i 1,0
+ITM l 5,13
+ITM j 9,13
+ITM k 9,8
+ITM l 2,11
+ITM l 5,9
+ITM l 7,11
+ITM l 5,12
+EXT 10,7 6 10,8 DLG x
+EXT 10,8 6 10,7
+EXT 3,13 0 13,13 DLG z
+PAL 0
+
+ROOM 7
+g,g,g,0,g,g,g,g,g,g,0,g,g,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,d,0,0,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,d,0,g
+g,0,g,g,g,0,g,0,0,g,0,g,0,d,0,g
+g,0,0,0,0,0,d,g,0,g,0,g,0,g,0,g
+g,0,g,g,g,0,g,g,g,g,0,g,0,g,0,g
+g,0,0,0,0,0,g,g,g,0,0,g,0,g,0,g
+g,0,g,g,g,0,g,g,g,g,0,g,d,g,0,g
+g,0,0,0,0,0,g,g,0,g,g,g,b,g,g,g
+NAME cave
+ITM o 2,11
+ITM o 7,10
+ITM n 1,13
+ITM m 5,6
+ITM 1 14,14
+ITM o 12,12
+ITM o 14,10
+EXT 6,11 7 7,11 DLG 11
+EXT 13,10 7 13,9
+EXT 13,9 7 13,10
+EXT 12,15 0 13,13 DLG 13
+PAL 0
+
+ROOM 8
 0,0,0,a,a,0,0,0,0,0,0,a,a,0,0,0
-0,0,a,0,0,a,0,e,0,0,a,0,0,a,0,0
+0,0,a,0,0,a,0,h,0,0,a,0,0,a,0,0
 0,a,0,0,a,0,a,0,a,a,0,0,0,0,a,0
 a,0,0,0,a,0,a,0,a,0,0,a,a,0,0,a
 a,0,0,a,a,0,a,0,a,a,0,a,a,0,0,a
@@ -101,7 +241,7 @@ a,0,a,a,0,0,a,0,a,a,0,0,0,0,a,a
 a,0,0,0,0,0,a,0,a,a,a,a,a,0,a,a
 a,a,a,a,0,0,a,0,a,0,0,0,a,0,0,a
 a,0,0,a,0,0,a,0,a,0,0,a,a,0,0,a
-a,0,a,a,0,0,a,f,a,0,0,0,0,0,0,a
+a,0,a,a,0,0,a,i,a,0,0,0,0,0,0,a
 a,0,a,0,0,0,0,0,0,0,0,a,0,0,0,a
 a,0,0,0,a,0,0,0,0,a,a,a,0,0,0,a
 a,a,a,0,a,0,0,0,0,a,0,0,0,a,0,a
@@ -111,31 +251,10 @@ a,0,0,0,0,0,0,a,0,0,0,0,0,a,0,a
 NAME towers
 ITM b 1,15
 ITM b 13,11
-ITM c 11,1
 ITM d 3,3
 EXT 7,1 0 13,13
 EXT 7,9 3 7,7 DLG p
 EXT 7,7 3 7,9
-PAL 0
-
-ROOM 4
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-NAME fortrest
 PAL 0
 
 TIL a
@@ -185,6 +304,37 @@ WAL false
 
 TIL e
 00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+
+TIL f
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+WAL true
+
+TIL g
+10101010
+01010101
+10101010
+01010101
+00101010
+01010101
+10101010
+01010101
+WAL true
+
+TIL h
 00011000
 00100100
 01000010
@@ -192,9 +342,9 @@ TIL e
 00100100
 00011000
 00000000
-NAME portal
+NaNNaNNaNNaNNaNNaNNaNNaN
 
-TIL f
+TIL i
 00000000
 01111100
 01000100
@@ -232,7 +382,7 @@ SPR A
 00111100
 00100100
 00100100
-POS 3 14,13
+POS 7 1,1
 
 SPR c
 00000000
@@ -266,20 +416,7 @@ SPR e
 00011000
 00011000
 00011000
-00000000
-NAME man 3
-DLG l
-POS 3 13,11
-
-SPR f
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
+NaNNaNNaNNaNNaNNaNNaNNaN
 
 SPR g
 00011000
@@ -435,44 +572,177 @@ NAME gum cha
 DLG f
 
 ITM b
-00000000
-00000000
-00000000
-00010000
-00111000
-00111000
-00111000
-00000000
-NAME apple 
-DLG m
+00011000
+00111100
+10100101
+01100110
+00011000
+00011000
+00111100
+00011000
+NAME forest monster
+DLG 14
 
 ITM c
 00000000
+00010000
+00101000
+00101000
+00111000
+00111000
+01111100
 00000000
-01111110
-00111100
-00111100
-00111100
-00111100
-00000000
-NAME bread
-DLG n
+NAME cannon
+DLG k
 
 ITM d
 00000000
-00001000
-00011100
-00011100
-00011100
-00011100
 00000000
+00010000
+00101000
+01000100
+00101000
+00010000
 00000000
-NAME water bottle
+NAME cannonball
+DLG m
+
+ITM e
+00000000
+01100110
+00011000
+11011011
+00100100
+01111110
+01000100
+10000010
+NAME cannon monster
 DLG o
 
-DLG 2
-A key! {wvy}What does it open?{wvy}
+ITM f
+00000000
+00000110
+00001010
+01110001
+01110001
+00001010
+00000110
+00000000
+NAME electric saw
+
+ITM h
+00000000
+00000000
+01100000
+01100000
+01100000
+00000000
+00000000
+00000000
+NAME saw battery
+DLG n
+
+ITM i
+00000000
+01111100
+01000100
+01000100
+01101100
+00101000
+00010000
+00000000
+NAME oxygen mask
+DLG w
+
+ITM j
+00000000
+00010000
+00011000
+00011000
+00011000
+00011000
+00011000
+00000000
+NAME oxygen tank
+
+ITM k
+00000000
+00100000
+00100000
+00100000
+00100000
+00110000
+00110000
+00000000
+NAME speargun
+DLG 10
+
+ITM l
+00000000
+01000010
+00100100
+10011001
+10011001
+00100100
+01000010
+00000000
+>
+00000000
+01000010
+00100000
+00011001
+10011000
+00100100
+00000010
+00000000
+NAME fish monster
+DLG y
+
+ITM m
+00000000
+00010000
+00101100
+01000111
+00101100
+00010000
+00000000
+00000000
+NAME jackhammer
+
+ITM n
+00000000
+01000100
+00101000
+00010000
+00010000
+00010000
+00010000
+00000000
+NAME Flashlight
+
+ITM o
+00000000
+01011010
+00100100
+01000010
+01000010
+01111110
+00000000
+00000000
+NAME cave monster
+DLG 12
+
+ITM p
+00011000
+00011000
+01111100
+00011000
+00011000
+00011000
+00011000
+NaNNaNNaNNaNNaNNaNNaNNaN
 NAME key dialog
+DLG 2
 
 DLG 4
 You found a rusty sword. go sharpen it before you defeat the monster
@@ -535,9 +805,70 @@ DLG 9
 """
 NAME bullets dialog
 
-DLG a
+DLG 10
+You got a speargun. Yay!
+NAME speargun dialog
 
-NAME man dialog
+DLG 11
+"""
+{
+  - {item "o"} >= 1 ?
+    {property locked false}You used the jackhammer and flashlight to break the wall.
+  - else ?
+    {property locked true}Find the jackhammer and flashlight to kill the monster
+}
+"""
+NAME locked exit 10
+
+DLG 12
+"""
+{
+  - {item "m"} >= 1 ?
+    {
+      - {item "n"} >= 1 ?
+        You killed the cave monster
+      - else ?
+        You lost! Perhaps try the flashlight next time{end}
+    }
+  - else ?
+    You lost! Try find the jackhammer!{end}
+}
+"""
+NAME cave monster dialog
+
+DLG 13
+"""
+{
+  - {item "1"} >= 1 ?
+    {property locked false}
+    The key opens the door!
+  - else ?
+    {property locked true}
+    The door is locked...
+}
+"""
+NAME locked exit 11
+
+DLG 14
+"""
+{
+  - {item "water bottle"} == 1 ?
+    thanks for the water{
+      - {item "c"} >= 1 ?
+        thanks for the bread{
+          - {item "b"} >= 1 ?
+            thanks for the apple{item "0" {{item "0"} + 1}}
+          - else ?
+            can u get me a apple
+        }
+      - else ?
+        did u remember the bread?
+    }
+  - else ?
+    I'm starving go get a apple, water bottle, and bread and I will give u the key.
+}
+"""
+NAME forest monster dialog
 
 DLG b
 """
@@ -611,46 +942,82 @@ DLG i
 you find some armour
 NAME armour dialog
 
-DLG j
- 
-
 DLG k
- 
-
-DLG l
-"""
-{
-  - {item "water bottle"} == 1 ?
-    thanks for the water{
-      - {item "c"} >= 1 ?
-        thanks for the bread{
-          - {item "b"} >= 1 ?
-            thanks for the apple{item "0" {{item "0"} + 1}}
-          - else ?
-            can u get me a apple
-        }
-      - else ?
-        did u remember the bread?
-    }
-  - else ?
-    I'm starving go get a apple, water bottle, and bread and I will give u the key.
-}
-"""
-NAME man 3 dialog
+ You have found a cannon. Go and oad with cannonball{printSprite "f"}
+NAME cannon dialog
 
 DLG m
-Apple
-NAME apple  dialog
+ you have a cannonball!{rbw}{rbw}{printSprite "h"}
+NAME cannonball dialog
 
 DLG n
-bread
-NAME bread dialog
+"""
+{
+  - {item "h"} >= 1 ?
+    You picked up a battery
+  - {item "f"} >= 1 ?
+    Now you have a saw and battery. Plug the battery in.
+  - else ?
+    You got a low charge battery for electric saw. Go and get the saw!
+}
+"""
+NAME battery dialog
 
 DLG o
-water bottle
-NAME water bottle dialog
+"""
+{
+  - {item "c"} >= 1 ?
+    {
+      - {item "d"} >= 1 ?
+        Yay! You can defeat the monster
+      - else ?
+        Your cannon has no ball! You lose!{end}
+    }
+  - else ?
+    You forgot your cannon! You lost!{end}
+}
+"""
+NAME cannon monster dialog
 
 DLG p
+"""
+{
+  - {item "h"} >= 1 ?
+    Plug the battery into the saw. It show a low charge. Proceed to cut some forest trees
+  - else ?
+    You pick up a saw. Remember the battery.
+}
+"""
+NAME saw dialog
+
+DLG t
+"""
+{
+  - {item "f"} >= 1 ?
+    {
+      - {item "h"} >= 1 ?
+        {property locked false}You cuts through the trees
+      - else ?
+        {property locked true}You need the battery for your saw
+    }
+  - else ?
+    {property locked true}You need something to cut through the trees
+}
+"""
+NAME locked exit 5
+
+DLG u
+"""
+{
+  - {item "h"} >= 2 ?
+    {property locked false}You cut through the trees and surprise by a forest monster. Chop the monster!
+  - else ?
+    {property locked true}The trees are dense. You need a fully charge saw to cut through the trees
+}
+"""
+NAME locked exit 6
+
+DLG v
 """
 {
   - {item "1"} >= 4 ?
@@ -659,9 +1026,47 @@ DLG p
     {property locked true}The door is locked...
 }
 """
-NAME locked exit 5
+NAME locked exit 7
 
-DLG q
-go that way and you will find a door 
-NAME sprite i dialog
+DLG w
+
+NAME oxygen mask dialog
+
+DLG x
+"""
+{
+  - {item "i"} >= 1 ?
+    {
+      - {item "j"} >= 1 ?
+        You now have oxygen tank. YOu can go to pick up the speargun{property locked false}
+      - else ?
+        Please find the oxygen tank to unlock to retrieve the speargun{property locked true}
+    }
+  - else ?
+    {property locked true}You have to pick up oxygen mask!
+}
+"""
+NAME locked exit 8
+
+DLG y
+"""
+{
+  - {item "k"} >= 1 ?
+    You kill the fish monster!
+  - else ?
+    You got eaten!{end}
+}
+"""
+NAME fish monster dialog
+
+DLG z
+"""
+{
+  - {item "l"} >= 5 ?
+    {property locked false}The key opens the door!
+  - else ?
+    {property locked true}The door is locked. Kill all the fish monsters!
+}
+"""
+NAME locked exit 9
 
