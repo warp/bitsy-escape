@@ -200,6 +200,37 @@ EXT 10,8 6 10,7
 EXT 3,13 0 13,13 DLG z
 PAL 0
 
+ROOM 7
+g,g,g,0,g,g,g,g,g,g,0,g,g,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,g,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,g,0,g
+g,0,g,0,g,0,g,0,0,d,0,0,0,g,0,g
+g,0,g,0,g,0,g,0,0,g,0,g,0,d,0,g
+g,0,g,g,g,0,g,0,0,g,0,g,0,d,0,g
+g,0,0,0,0,0,d,g,0,g,0,g,0,g,0,g
+g,0,g,g,g,0,g,g,g,g,0,g,0,g,0,g
+g,0,0,0,0,0,g,g,g,0,0,g,0,g,0,g
+g,0,g,g,g,0,g,g,g,g,0,g,d,g,0,g
+g,0,0,0,0,0,g,g,0,g,g,g,b,g,g,g
+NAME cave
+ITM o 2,11
+ITM o 7,10
+ITM n 1,13
+ITM m 5,6
+ITM 1 14,14
+ITM o 12,12
+ITM o 14,10
+EXT 6,11 7 7,11 DLG 11
+EXT 13,10 7 13,9
+EXT 13,9 7 13,10
+EXT 12,15 0 13,13 DLG 13
+PAL 0
+
 TIL b
 00000000
 01111100
@@ -254,6 +285,17 @@ TIL f
 11111111
 WAL true
 
+TIL g
+10101010
+01010101
+10101010
+01010101
+00101010
+01010101
+10101010
+01010101
+WAL true
+
 SPR A
 00000000
 00010000
@@ -272,7 +314,7 @@ SPR A
 00111100
 00100100
 00100100
-POS 6 3,1
+POS 7 1,1
 
 SPR c
 00000000
@@ -574,6 +616,40 @@ ITM l
 NAME fish monster
 DLG y
 
+ITM m
+00000000
+00010000
+00101100
+01000111
+00101100
+00010000
+00000000
+00000000
+NAME jackhammer
+
+ITM n
+00000000
+01000100
+00101000
+00010000
+00010000
+00010000
+00010000
+00000000
+NAME Flashlight
+
+ITM o
+00000000
+01011010
+00100100
+01000010
+01000010
+01111110
+00000000
+00000000
+NAME cave monster
+DLG 12
+
 DLG 2
 A key! {wvy}What does it open?{wvy}
 NAME key dialog
@@ -642,6 +718,46 @@ NAME bullets dialog
 DLG 10
 You got a speargun. Yay!
 NAME speargun dialog
+
+DLG 11
+"""
+{
+  - {item "o"} >= 1 ?
+    {property locked false}You used the jackhammer and flashlight to break the wall.
+  - else ?
+    {property locked true}Find the jackhammer and flashlight to kill the monster
+}
+"""
+NAME locked exit 10
+
+DLG 12
+"""
+{
+  - {item "m"} >= 1 ?
+    {
+      - {item "n"} >= 1 ?
+        You killed the cave monster
+      - else ?
+        You lost! Perhaps try the flashlight next time{end}
+    }
+  - else ?
+    You lost! Try find the jackhammer!{end}
+}
+"""
+NAME cave monster dialog
+
+DLG 13
+"""
+{
+  - {item "1"} >= 1 ?
+    {property locked false}
+    The key opens the door!
+  - else ?
+    {property locked true}
+    The door is locked...
+}
+"""
+NAME locked exit 11
 
 DLG b
 """
