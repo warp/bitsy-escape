@@ -26,8 +26,8 @@ a,0,a,0,a,0,0,a,0,a,a,a,a,0,0,0
 a,0,a,a,a,a,a,a,0,0,0,0,0,0,a,0
 a,0,0,0,0,0,0,a,a,a,a,a,0,a,a,0
 a,a,a,0,a,a,0,a,a,a,a,a,0,a,0,0
-a,0,a,0,a,a,0,a,0,a,a,a,0,0,0,a
-a,b,0,0,a,a,0,0,0,0,a,0,a,a,0,a
+a,0,a,0,a,a,0,a,0,a,a,a,0,0,0,0
+a,b,0,0,a,a,0,0,0,0,a,0,a,e,0,a
 a,0,a,0,a,a,a,a,0,a,0,0,a,0,0,a
 a,a,a,a,a,a,a,a,a,a,0,0,0,0,a,a
 NAME Dungeon
@@ -231,6 +231,32 @@ EXT 13,9 7 13,10
 EXT 12,15 0 13,13 DLG 13
 PAL 0
 
+ROOM 8
+0,0,0,a,a,0,0,0,0,0,0,a,a,0,0,0
+0,0,a,0,0,a,0,h,0,0,a,0,0,a,0,0
+0,a,0,0,a,0,a,0,a,a,0,0,0,0,a,0
+a,0,0,0,a,0,a,0,a,0,0,a,a,0,0,a
+a,0,0,a,a,0,a,0,a,a,0,a,a,0,0,a
+a,0,a,a,0,0,a,0,a,a,0,0,0,0,a,a
+a,0,0,0,0,0,a,0,a,a,a,a,a,0,a,a
+a,a,a,a,0,0,a,0,a,0,0,0,a,0,0,a
+a,0,0,a,0,0,a,0,a,0,0,a,a,0,0,a
+a,0,a,a,0,0,a,i,a,0,0,0,0,0,0,a
+a,0,a,0,0,0,0,0,0,0,0,a,0,0,0,a
+a,0,0,0,a,0,0,0,0,a,a,a,0,0,0,a
+a,a,a,0,a,0,0,0,0,a,0,0,0,a,0,a
+a,0,a,0,a,0,0,0,0,a,0,0,0,a,0,a
+a,0,0,0,a,a,a,a,0,a,a,0,0,a,0,a
+a,0,0,0,0,0,0,a,0,0,0,0,0,a,0,a
+NAME towers
+ITM b 1,15
+ITM b 13,11
+ITM d 3,3
+EXT 7,1 0 13,13
+EXT 7,9 3 7,7 DLG p
+EXT 7,7 3 7,9
+PAL 0
+
 TIL a
 11111111
 11111111
@@ -308,10 +334,40 @@ TIL g
 01010101
 WAL true
 
+TIL h
+00011000
+00100100
+01000010
+01000010
+00100100
+00011000
+00000000
+NaNNaNNaNNaNNaNNaNNaNNaN
+
+TIL i
+00000000
+01111100
+01000100
+01000100
+01011100
+01000100
+01000100
+01111100
+>
+00000000
+01111100
+01000100
+01000100
+01001100
+01000100
+01000100
+01111100
+NAME door 3
+
 SPR A
 00000000
 00010000
-01110001
+01110000
 01110001
 00110010
 00111100
@@ -320,7 +376,7 @@ SPR A
 >
 00000000
 00010000
-01110000
+01110001
 01110000
 00110010
 00111100
@@ -350,6 +406,17 @@ SPR d
 00011000
 00000000
 NAME man 2
+DLG a
+
+SPR e
+00011000
+00011000
+01111100
+00011000
+00011000
+00011000
+00011000
+NaNNaNNaNNaNNaNNaNNaNNaN
 
 SPR g
 00011000
@@ -372,6 +439,18 @@ SPR h
 00000000
 00000000
 00000000
+
+SPR i
+00011000
+00011000
+01100100
+00000100
+00011000
+00011000
+00011000
+00000000
+DLG q
+POS 3 10,10
 
 ITM 1
 00000000
@@ -502,6 +581,7 @@ ITM b
 00111100
 00011000
 NAME forest monster
+DLG 14
 
 ITM c
 00000000
@@ -549,16 +629,6 @@ ITM f
 00000110
 00000000
 NAME electric saw
-
-ITM g
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
 
 ITM h
 00000000
@@ -662,9 +732,17 @@ ITM o
 NAME cave monster
 DLG 12
 
-DLG 2
-A key! {wvy}What does it open?{wvy}
+ITM p
+00011000
+00011000
+01111100
+00011000
+00011000
+00011000
+00011000
+NaNNaNNaNNaNNaNNaNNaNNaN
 NAME key dialog
+DLG 2
 
 DLG 4
 You found a rusty sword. go sharpen it before you defeat the monster
@@ -770,6 +848,27 @@ DLG 13
 }
 """
 NAME locked exit 11
+
+DLG 14
+"""
+{
+  - {item "water bottle"} == 1 ?
+    thanks for the water{
+      - {item "c"} >= 1 ?
+        thanks for the bread{
+          - {item "b"} >= 1 ?
+            thanks for the apple{item "0" {{item "0"} + 1}}
+          - else ?
+            can u get me a apple
+        }
+      - else ?
+        did u remember the bread?
+    }
+  - else ?
+    I'm starving go get a apple, water bottle, and bread and I will give u the key.
+}
+"""
+NAME forest monster dialog
 
 DLG b
 """
