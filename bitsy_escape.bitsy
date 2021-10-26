@@ -964,12 +964,11 @@ NAME tower helper dialog
 
 DLG 18
 you found an apple.
-NAME apple  dialog
+NAME apple dialog
 
 DLG 19
 """
 you found some bread
-
 """
 NAME bread dialog
 
