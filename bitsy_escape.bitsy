@@ -391,6 +391,7 @@ SPR A
 00111100
 00100100
 00100100
+POS 4 14,13
 
 SPR c
 00000000
@@ -642,6 +643,7 @@ ITM f
 00000110
 00000000
 NAME electric saw
+DLG 1b
 
 ITM h
 00000000
@@ -765,6 +767,7 @@ ITM q
 00111000
 00000000
 NAME apple 
+DLG 18
 
 ITM r
 00000000
@@ -776,6 +779,7 @@ ITM r
 00111100
 00000000
 NAME bread
+DLG 19
 
 ITM s
 00000000
@@ -787,6 +791,7 @@ ITM s
 00000000
 00000000
 NAME water bottle
+DLG 1a
 
 ITM t
 00000000
@@ -956,6 +961,16 @@ NAME loot dialog
 DLG 17
 The exit is just this way past the locked door.
 NAME tower helper dialog
+
+DLG 18
+you found an apple.
+NAME apple dialog
+
+DLG 19
+"""
+you found some bread
+"""
+NAME bread dialog
 
 DLG b
 """
@@ -1152,4 +1167,15 @@ DLG z
 }
 """
 NAME locked exit 9
+
+DLG 1a
+you found a water bottle
+NAME water bottle dialog
+
+DLG 1b
+"""
+you found a  electric chainsaw
+
+"""
+NAME electric saw dialog
 
