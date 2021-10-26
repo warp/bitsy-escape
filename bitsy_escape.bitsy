@@ -103,7 +103,7 @@ a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 0,0,0,0,0,0,0,0,a,0,0,0,0,a,0,a
 a,0,0,a,0,a,0,0,a,a,a,0,0,0,0,0
 a,b,a,a,a,a,0,0,0,0,0,0,a,a,a,0
-a,a,a,0,a,a,0,0,a,0,0,a,0,0,0,0
+a,0,a,0,a,a,0,0,a,0,0,a,0,0,0,0
 a,a,a,0,0,a,a,a,a,0,0,a,a,0,0,0
 0,0,a,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,a,0,0,a,a,a,a,a,a,0,0,0,a,0
@@ -112,8 +112,7 @@ NAME fort
 ITM d 10,15
 ITM c 2,12
 ITM e 8,6
-ITM e 8,8
-EXT 7,7 4 13,13
+EXT 1,10 4 13,13
 PAL 0
 
 ROOM 4
@@ -139,7 +138,7 @@ ITM q 10,2
 ITM r 2,3
 ITM s 1,15
 EXT 7,1 5 0,14
-EXT 7,9 4 7,8 DLG p
+EXT 7,9 4 7,8 DLG v
 PAL 0
 
 ROOM 5
@@ -392,7 +391,7 @@ SPR A
 00111100
 00100100
 00100100
-POS 0 8,13
+POS 4 14,13
 
 SPR c
 00000000
@@ -428,6 +427,9 @@ SPR e
 00011000
 00011000
 NaNNaNNaNNaNNaNNaNNaNNaN
+NAME tower helper
+DLG 17
+POS 4 9,9
 
 SPR g
 00011000
@@ -460,8 +462,9 @@ SPR i
 00011000
 00011000
 00000000
-DLG q
-POS 3 10,10
+NAME tower guard
+DLG 14
+POS 4 13,11
 
 ITM 1
 00000000
@@ -640,6 +643,7 @@ ITM f
 00000110
 00000000
 NAME electric saw
+DLG 1b
 
 ITM h
 00000000
@@ -763,6 +767,7 @@ ITM q
 00111000
 00000000
 NAME apple 
+DLG 18
 
 ITM r
 00000000
@@ -774,6 +779,7 @@ ITM r
 00111100
 00000000
 NAME bread
+DLG 19
 
 ITM s
 00000000
@@ -785,6 +791,7 @@ ITM s
 00000000
 00000000
 NAME water bottle
+DLG 1a
 
 ITM t
 00000000
@@ -797,6 +804,16 @@ ITM t
 00111110
 NAME loot
 DLG 16
+
+ITM u
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
 
 DLG 4
 You found a rusty sword. go sharpen it before you defeat the monster
@@ -922,7 +939,7 @@ DLG 14
     I'm starving go get a apple, water bottle, and bread and I will give u the key.
 }
 """
-NAME forest monster dialog
+NAME tower guard dialog
 
 DLG 15
 """
@@ -940,6 +957,21 @@ NAME locked exit 12
 DLG 16
 you find loot{end}
 NAME loot dialog
+
+DLG 17
+The exit is just this way past the locked door.
+NAME tower helper dialog
+
+DLG 18
+you found an apple.
+NAME apple  dialog
+
+DLG 19
+"""
+you found some bread
+
+"""
+NAME bread dialog
 
 DLG b
 """
@@ -1136,4 +1168,15 @@ DLG z
 }
 """
 NAME locked exit 9
+
+DLG 1a
+you found a water bottle
+NAME water bottle dialog
+
+DLG 1b
+"""
+you found a  electric chainsaw
+
+"""
+NAME electric saw dialog
 
